@@ -1,3 +1,5 @@
+module Server (main) where
+
 import Network.Socket
 import System.IO
 
@@ -22,3 +24,4 @@ loopForever sock = do
   hClose handleSock                              
   loopForever sock
 
+-- to run use this: 'ghc ./Server.hs -e main'
